@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Icon da página-->
+    <link rel="icon" href="./img/logo.png" type="image/png" >
+    <!--/Icon da página-->
+
+    <title>Tela de Login</title>
+
+</head>
+
+<body>
+    <!--Container-->
+    <div class="container">
+        <div class="card">
+                    <h1>Entrar</h1>
+
+                    <div id="msgErrorlogin"></div>
+
+                    <!--Inputs-->
+
+                    <!--Usuário-->
+                    <div class="label-float">
+                        <input type="text" id="user" placeholder="" required>
+                        <label id="userlabel" for="user">Usuário</label>
+                    </div>
+                    <!--/Usuário-->
+
+                    <!--Senha-->
+                    <div class="label-float">
+                        <input type="password" id="senha" placeholder="" required>
+                        <label id="senhalabel" for="senha">Senha</label>
+                    </div>
+                    <!--/Senha-->
+                    
+                    <!--/Inputs-->
+
+                    <!--Botão Entrar-->
+                    <div class="justify-center">
+                        <button onclick='validarUser()'>Entrar</button>
+                    </div>
+                    <!--/Botão Entrar-->
+
+                    <!--Não tem uma conta-->
+                    <div class="justify-center">
+                        <hr>
+                    </div>
+
+                    <p>Não tem uma conta? <a href="./cadastro.html"> Cadastre-se </a></p>
+                    <!--/Não tem uma conta-->
+
+            </div>    
+    </div>
+    <!--/Container-->
+<script src="./script.js"></script>
+</body>
+
+</html>

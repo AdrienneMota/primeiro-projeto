@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+<!--Container cadastro-->
+    <div class="container">
+        <div class="card">
+            <h1>Cadastro de Usuário</h1>
+        
+        <div id ='msgError'></div>
+        <div id ='msgSuccess'></div>
+        
+        <div class="label-float">
+            <input type="text" id="name" placeholder="" required>
+            <label id="labelName" for="name">Nome Completo</label>
+        </div>
+
+        <div class="label-float">
+            <input type="text" id="user" placeholder="" required>
+            <label id="labelUser" for="user">Usuário</label>
+        </div>
+
+        <div class="label-float">
+            <input type="password" id="password_user" placeholder="" required>
+            <label id="labelPassword" for="password">Senha</label>
+        </div>
+
+        <div class="label-float">
+            <input type="password" id="password_repeat" placeholder="" required>
+            <label id="labelPassword_repeat" for="password">Confirma Senha</label>
+        </div>
+
+        <div class="justify-center">
+            <button onclick="cadastrarUser()">Cadastro</button>
+        </div>
+
+        </div>
+    </div>
+<!--/Container cadastro-->
+<script src="./script.js"></script>
+</body>
+</html>
